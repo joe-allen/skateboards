@@ -1,0 +1,9 @@
+{% set ctaContent = cta %}
+
+{% if ctaOverride %}
+	{% set ctaContent = ctaOverride %}
+{% endif %}
+
+<button class="{{ctaContent.class}}">
+	{{ctaContent.buttonText}}
+</button>

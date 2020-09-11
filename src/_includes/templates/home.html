@@ -1,0 +1,25 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+<article>
+	<h1>{{ title }}</h1>
+	{{ content | safe }}
+	<!-- {{ skateboards | safe }} -->
+	<img src="images/{{skateboards}}" alt="">
+</article>
+
+josee
+{% set ctaOverride = ctaPrimary %}
+{% include 'components/cta.html' %}
+
+<hr>
+<h3>featured skateboards</h3>
+{% include 'components/featured-skateboards.html' %}
+<hr>
+<h3>skateboards</h3>
+{% include 'components/skateboards.html' %}
+<hr>
+
+{% set ctaOverride = cta %}
+{% include 'components/cta.html' %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{
+	"items": [
+		{
+			"text": "Home",
+			"url": "/"
+		},
+		{
+			"text": "Skaters",
+			"url": "/skaters"
+		},
+		{
+			"text": "Decks",
+			"url": "/decks"
+		},
+		{
+			"text": "Shoes",
+			"url": "/shoes"
+		},
+		{
+			"text": "News",
+			"url": "/news"
+		}
+	]
+}

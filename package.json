@@ -1,0 +1,22 @@
+{
+	"name": "from_scratch_v1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "npx eleventy --serve"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@11ty/eleventy-cache-assets": "^2.0.3",
+		"chrome-aws-lambda": "^5.2.1",
+		"puppeteer-core": "^5.2.1"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.0",
+		"puppeteer": "^5.2.1"
+	}
+}
