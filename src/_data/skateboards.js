@@ -6,7 +6,7 @@ module.exports = async () => {
 		executablePath: await chromium.executablePath,
 		args: chromium.args,
 		defaultViewport: chromium.defaultViewport,
-		headless: false,
+		headless: true,
 	});
 
 	const url  = 'https://www.skatewarehouse.com/';
