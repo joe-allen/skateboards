@@ -10,6 +10,8 @@ module.exports = async () => {
 			}
 		);
 
+		console.log('item', item);
+
 		return item;
 	} catch (error) {
 		return `There is an error b: ${error}`;

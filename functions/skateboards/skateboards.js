@@ -3,7 +3,7 @@ const chromium = require('chrome-aws-lambda');
 const skate = async () => {
 
 	const browser = await chromium.puppeteer.launch({
-		executablePath: await chromium.executablePath,
+		executablePath: undefined,
 		args: chromium.args,
 		defaultViewport: chromium.defaultViewport,
 		headless: true,
