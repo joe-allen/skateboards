@@ -4,11 +4,12 @@
 <article>
 	<h1>{{ title }}</h1>
 	{{ content | safe }}
-	<!-- {{ skateboards | safe }} -->
-	<img src="images/{{skateboards}}" alt="">
+	{{ skateboards.daily.price | safe }}
+	{{ skateboards.daily.note | safe }}
+	{{ skateboards.daily.link | safe }}
+	<!-- <img src="images/{{skateboards.img}}" alt=""> -->
 </article>
 
-josee
 {% set ctaOverride = ctaPrimary %}
 {% include 'components/cta.html' %}
 
