@@ -4,9 +4,15 @@
 <article>
 	<h1>{{ title }}</h1>
 	{{ content | safe }}
-	{{ skateboards.daily.price | safe }}
-	{{ skateboards.daily.note | safe }}
+
+	<hr>
+	<h2>Skateboard Ad</h2>
+	{{ skateboards.daily.price | safe }}<br>
+	{{ skateboards.daily.note | safe }}<br>
 	{{ skateboards.daily.link | safe }}
+	<hr>
+	<h2>CL Ad</h2>
+	{{ cl.item | safe }}
 	<!-- <img src="images/{{skateboards.img}}" alt=""> -->
 </article>
 
