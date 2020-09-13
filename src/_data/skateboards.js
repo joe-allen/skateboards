@@ -16,7 +16,6 @@ module.exports = async () => {
 	}
 }
 
-
 // const chromium = require('chrome-aws-lambda');
 // module.exports = async () => {
 
