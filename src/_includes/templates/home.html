@@ -2,19 +2,15 @@
 
 {% block content %}
 <article>
-	<h1>{{ title }}</h1>
-	{{ content | safe }}
-
-	<hr>
-	does it work?
-	<hr>
+	<!-- <h1>{{ title }}</h1>
+	{{ content | safe }} -->
 	<h2>Skateboard Ad</h2>
 	{{ skateboards.daily.price | safe }}<br>
 	{{ skateboards.daily.note | safe }}<br>
 	{{ skateboards.daily.link | safe }}
 	<hr>
 	<h2>CL Ad</h2>
-	{{ cl.item | safe }}
+	{{ cl | safe }}
 	<!-- <img src="images/{{skateboards.img}}" alt=""> -->
 </article>
 

@@ -3,6 +3,7 @@ const chromium = require('chrome-aws-lambda');
 const cl = async () => {
 
 	const browser = await chromium.puppeteer.launch({
+		// executablePath: undefined,
 		executablePath: await chromium.executablePath,
 		args: chromium.args,
 		defaultViewport: chromium.defaultViewport,
@@ -18,8 +19,6 @@ const cl = async () => {
 
 		return ad;
 	});
-
-	console.log('item', item);
 
 	await browser.close();
 
